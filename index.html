@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All-Terrain Education &amp; Services | Coming soon</title>
+  <meta name="description" content="Field-based vocational training for outdoor educators across Sydney and NSW: four-wheel driving, first aid and water rescue, delivered on your site. Website coming soon.">
+  <meta name="theme-color" content="#1a344f">
+  <link rel="icon" href="logo.png">
+  <meta property="og:title" content="All-Terrain Education & Services">
+  <meta property="og:description" content="Training for outdoor educators, delivered where you work. Website coming soon.">
+  <meta property="og:image" content="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a344f;
+      --green: #3f765f;
+      --green-deep: #2f5d4a;
+      --paper: #ffffff;
+      --mist: #eef3f0;
+      --ink: #1a344f;
+      --muted: #4d6073;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 1rem; }
+    body {
+      margin: 0;
+      font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green-deep); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; border-radius: 2px; }
+
+    .wrap { width: min(100% - 2.5rem, 62rem); margin-inline: auto; }
+
+    /* Hero */
+    header { padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem); text-align: center; }
+    .logo { width: min(100%, 26rem); height: auto; display: block; margin: 0 auto clamp(1.5rem, 4vw, 2.5rem); }
+    h1 {
+      font-size: clamp(2rem, 5.2vw, 3.4rem);
+      line-height: 1.08;
+      font-weight: 750;
+      font-stretch: 85%;
+      letter-spacing: -0.015em;
+      margin: 0 auto 1.1rem;
+      max-width: 22ch;
+      text-wrap: balance;
+    }
+    .lede { font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--muted); max-width: 40rem; margin: 0 auto 1.75rem; text-wrap: pretty; }
+    .status {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      font-weight: 600;
+      padding: .6rem 1.2rem;
+      border-radius: 999px;
+      font-size: .98rem;
+    }
+
+    /* Contour band: nod to the topographic maps outdoor educators navigate by */
+    .contours { display: block; width: 100%; height: clamp(70px, 12vw, 140px); color: var(--green); }
+
+    /* Services */
+    .services { background: var(--mist); padding: clamp(2.5rem, 6vw, 4rem) 0; }
+    h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-stretch: 85%; font-weight: 700; margin: 0 0 1.5rem; }
+    .grid { display: grid; gap: 1.75rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+    .grid h3 { font-size: 1.15rem; margin: 0 0 .4rem; padding-left: .9rem; border-left: 4px solid var(--green); line-height: 1.25; }
+    .grid p { margin: 0; color: var(--muted); padding-left: calc(.9rem + 4px); }
+    .note { margin: 2rem 0 0; font-size: 1rem; color: var(--muted); max-width: 44rem; }
+
+    /* Contact */
+    .contact { padding: clamp(2.5rem, 6vw, 4rem) 0; }
+    .contact p { margin: 0 0 .5rem; max-width: 40rem; }
+    .contact .details { font-size: 1.15rem; font-weight: 600; margin-top: 1rem; }
+    .contact .details span { display: block; }
+
+    footer { background: var(--navy); color: #d7e0e8; padding: 1.5rem 0; font-size: .92rem; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: .5rem 2rem; justify-content: space-between; }
+    footer p { margin: 0; }
+
+    /* One page-load moment: the contour band draws in */
+    .contours path { stroke-dasharray: 1400; stroke-dashoffset: 1400; animation: draw 2.4s ease-out .2s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .contours path { animation: none; stroke-dashoffset: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <img class="logo" src="logo.png" alt="All-Terrain Education &amp; Services logo: a compass above a mountain range" width="1428" height="840">
+      <h1>Training for outdoor educators, delivered where you work.</h1>
+      <p class="lede">We are building our website. In the meantime, All-Terrain Education &amp; Services is taking enquiries from outdoor education organisations across Sydney and New South Wales.</p>
+      <span class="status">Website coming soon</span>
+    </div>
+  </header>
+
+  <svg class="contours" viewBox="0 0 1200 140" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+    <path d="M0 110 C150 70 260 130 420 95 S700 40 860 85 S1100 120 1200 80" opacity=".95"/>
+    <path d="M0 98 C150 58 260 118 420 83 S700 28 860 73 S1100 108 1200 68" opacity=".7"/>
+    <path d="M0 86 C150 46 260 106 420 71 S700 16 860 61 S1100 96 1200 56" opacity=".5"/>
+    <path d="M0 74 C150 34 260 94 420 59 S700 4 860 49 S1100 84 1200 44" opacity=".32"/>
+    <path d="M0 126 C150 90 260 142 420 112 S700 62 860 104 S1100 134 1200 100" opacity=".5"/>
+  </svg>
+
+  <main>
+    <section class="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <h2 id="services-heading">What we will offer</h2>
+        <div class="grid">
+          <div>
+            <h3>Four-wheel driving</h3>
+            <p>Practical 4WD training, including recovery, for staff who drive in challenging conditions.</p>
+          </div>
+          <div>
+            <h3>First aid and remote area first aid</h3>
+            <p>Delivered by practising medical professionals, in the bush settings your staff work in.</p>
+          </div>
+          <div>
+            <h3>Water rescue</h3>
+            <p>Perform Water Rescue training that reflects kayaking and other water activities.</p>
+          </div>
+        </div>
+        <p class="note">One provider for the qualifications your organisation needs to maintain, taught on your site or alongside your scheduled field activities.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> All-Terrain Education &amp; Services Pty. Ltd.</p>
+      <p>Serving Sydney and New South Wales</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
